@@ -1,0 +1,59 @@
+# ============================================================
+# ROOT-LEVEL .gitignore for AI Mock Interview
+# ============================================================
+
+# ---- OS files ----
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---- Editor / IDE ----
+.vscode/
+.idea/
+*.suo
+*.user
+.nova/
+.fleet/
+.zed/
+
+# ---- Documentation build artifacts ----
+*.tmp
+
+# ---- Report doc (generated, not source code) ----
+PROJECT_BUG_FIXES_AND_IMPROVEMENTS_REPORT.doc
+PROJECT_BUG_FIXES_AND_IMPROVEMENTS_REPORT.md
+
+# ---- Backend (Laravel) ----
+backend/interview-backend/.env
+backend/interview-backend/.env.backup
+backend/interview-backend/.env.production
+backend/interview-backend/vendor/
+backend/interview-backend/node_modules/
+backend/interview-backend/public/build/
+backend/interview-backend/public/hot/
+backend/interview-backend/public/storage/
+backend/interview-backend/storage/*.key
+backend/interview-backend/storage/pail/
+backend/interview-backend/storage/logs/*.log
+backend/interview-backend/storage/framework/cache/
+backend/interview-backend/storage/framework/sessions/
+backend/interview-backend/storage/framework/views/
+backend/interview-backend/bootstrap/cache/*.php
+backend/interview-backend/database/database.sqlite
+backend/interview-backend/.phpunit.result.cache
+backend/interview-backend/.phpunit.cache/
+backend/interview-backend/auth.json
+
+# ---- Frontend (React) ----
+frontend/interview-frontend/node_modules/
+frontend/interview-frontend/build/
+frontend/interview-frontend/coverage/
+frontend/interview-frontend/.pnp
+frontend/interview-frontend/.pnp.js
+frontend/interview-frontend/.env.local
+frontend/interview-frontend/.env.development.local
+frontend/interview-frontend/.env.test.local
+frontend/interview-frontend/.env.production.local
+frontend/interview-frontend/npm-debug.log*
+frontend/interview-frontend/yarn-debug.log*
+frontend/interview-frontend/yarn-error.log*
